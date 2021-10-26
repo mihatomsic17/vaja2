@@ -27,8 +27,7 @@
         android:id="@+id/shopNameText"
         android:layout_width="211dp"
         android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="76dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="#FFFFFF"
@@ -37,29 +36,15 @@
         app:layout_constraintBottom_toTopOf="@+id/serialText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Serial number:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toStartOf="@+id/serialText"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/serialText"
         android:layout_width="196dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="32dp"
         android:ems="10"
         android:inputType="number"
         android:textColor="#FFFFFF"
@@ -79,17 +64,31 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toStartOf="@+id/shopNameText"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.942"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
-        app:layout_constraintVertical_bias="0.424" />
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Serial number:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/serialText"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="388dp" />
+        app:layout_constraintGuide_begin="301dp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -124,20 +123,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="279dp" />
+        app:layout_constraintGuide_begin="182dp" />
 
     <Button
         android:id="@+id/buttonExit"
         android:layout_width="81dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="172dp"
         android:background="#6D6D6D"
         android:onClick="onClickExit"
         android:text="EXIT"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
